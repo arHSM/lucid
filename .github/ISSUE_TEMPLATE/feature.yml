@@ -1,0 +1,65 @@
+name: Feature Request
+description: Generate a feature request for lucid
+title: "[Feature] ..."
+labels:
+  - Feature Request
+assignees:
+  - arHSM
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe the feature you are requesting
+    validations:
+      required: true
+  - type: dropdown
+    id: renderers
+    attributes:
+      label: Renderers
+      description: >-
+        Which renderer(s) is this feature request applicable for, skip for all
+      multiple: true
+      options:
+        - wgpu
+        - glow
+        - glutin
+  - type: dropdown
+    id: platforms
+    attributes:
+      label: Platforms
+      description: >-
+        Which platform(s) is this feature request applicable for, skip for all
+      multiple: true
+      options:
+        - macOS
+        - Linux
+        - Windows
+        - Android
+        - iOS
+    validations:
+      required: true
+  - type: textarea
+    id: justification
+    attributes:
+      label: Justification
+      description: Justify why lucid must have this feature
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: Referencces
+      description: >-
+        References appropriate to the feature request, such as past issues, PRs,
+        etc.
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Terms
+      description: By submitting this issue, you agree to the following
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
+        - label: I agree to follow this project's Contribution Guidelines
+          required: true

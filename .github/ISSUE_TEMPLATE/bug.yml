@@ -1,0 +1,94 @@
+name: Bug Report
+description: Generate a bug report for lucid
+title: "[Bug] ..."
+labels:
+  - Bug
+assignees:
+  - arHSM
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe the bug you are facing in detail
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: What version of lucid are you using
+      placeholder: 1.0.0
+    validations:
+      required: true
+  - type: dropdown
+    id: renderers
+    attributes:
+      label: Renderers
+      description: Which renderer(s) are you using
+      multiple: true
+      options:
+        - wgpu
+        - glow
+        - glutin
+    validations:
+      required: true
+  - type: dropdown
+    id: platforms
+    attributes:
+      label: Platforms
+      description: Which platform(s) is the bug occurring on
+      multiple: true
+      options:
+        - macOS
+        - Linux
+        - Windows
+        - Android - Sim
+        - Android
+        - iOS - Sim
+        - iOS
+    validations:
+      required: true
+  - type: textarea
+    id: repro-steps
+    attributes:
+      label: Steps to Reproduce
+      description: Provide steps to successfully reproduce the concerning bug
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Provide relevant logs of the concerning bug
+    validations:
+      required: true
+  - type: textarea
+    id: expectations
+    attributes:
+      label: Expected Result
+      description: Describe what you expected
+    validations:
+      required: true
+  - type: textarea
+    id: reality
+    attributes:
+      label: Current Result
+      description: Describe what currently happens
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Additional Notes, like potential solutions, etc.
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Terms
+      description: By submitting this issue, you agree to the following
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
+        - label: I agree to follow this project's Contribution Guidelines
+          required: true
