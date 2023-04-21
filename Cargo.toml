@@ -10,10 +10,9 @@ edition = "2021"
 [workspace]
 members = [
     ".",
+    "editor",
     "crates/clearglyph",
     "crates/core",
-    "crates/editor",
-    "crates/layout",
     "crates/native",
     "crates/web",
 ]
