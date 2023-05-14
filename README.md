@@ -23,7 +23,7 @@ platforms, macOS/Linux/Windows/iOS/Android/Web and even embedded systems.
 - Easy to use, simple
 - Cross Platform support
 - Component system
-- SwiftUI inspired architecture (`Message`, `view`, `update`)
+- SwiftUI inspired architecture
 - Abundant features and styling choices
 
 ## Getting Started
