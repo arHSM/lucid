@@ -23,7 +23,7 @@ platforms, macOS/Linux/Windows/iOS/Android/Web and even embedded systems.
 - Easy to use, simple
 - Cross Platform support
 - Component system
-- Elm-like architecture (`Message`, `view`, `update`)
+- SwiftUI inspired architecture (`Message`, `view`, `update`)
 - Abundant features and styling choices
 
 ## Getting Started
@@ -32,10 +32,10 @@ platforms, macOS/Linux/Windows/iOS/Android/Web and even embedded systems.
 
 ## Contribution
 
-Contribution is greatly welcomed, make sure to go through the
-[guidelines][contribution-guidelines] beforehand.
+Contribution is greatly welcomed, make sure to go through the [guidelines]
+beforehand.
 
-You can join my (arHSM) personal Discord server to discuss about lucid
+You can join my (arHSM) personal Discord [server] to discuss about lucid
 
+[guidelines]: ./.github/CONTRIBUTING.md
 [server]: https://discord.gg/HEpk6q9kYM
-[contribution-guidelines]: ./.github/CONTRIBUTING.md
